@@ -20,13 +20,13 @@ const categoriesData = [
     {
         id: '4',
         image: require('../images/burger-icons.webp'),
-        title: 'Burgers',
+        title: 'Burger',
         selected: false,
       },
       {
         id: '5',
         image: require('../images/taco.png'),
-        title: 'Tacos',
+        title: 'Taco',
         selected: false,
       },
   ];

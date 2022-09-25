@@ -1,8 +1,9 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import colors from "../../assets/colors/colors";
 export default StyleSheet.create({
     container:{
         flex:1,
+        
     },
     headerWrapper:{
         paddingTop:60,
@@ -10,7 +11,7 @@ export default StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-between',
         paddingHorizontal:20,
-        marginTop:30,
+        marginTop:Platform.OS ? 0 : 24,
         
     },
     profileImage:{
@@ -68,9 +69,21 @@ categoriesListwrapper :{
     paddingBottom:20,
 },
 categoryItemWrapper :{
-    backgroundColor:colors.yellow,
+    backgroundColor:colors.red,
     marginRight:30,
-    borderRadius:20
+    borderRadius:20,
+    shadowColor: colors.black,
+    color:colors.red,
+    marginBottom:20,
+    
+shadowOffset: {
+	width: 0,
+	height: 2,
+},
+shadowOpacity:0.02,
+shadowRadius: 3.84,
+
+elevation: 5,
 
 },
 categoryItemImage :{
@@ -94,6 +107,7 @@ categorySelectWrapper :{
     height:26,
     borderRadius:26,
     marginBottom:20,
+    
 
 },
 categoryIcon :{
@@ -122,7 +136,9 @@ popularCardWrapper:{
     borderRadius:20,
     paddingTop:20,
     paddingLeft:20,
-    flexDirection:'row'
+    flexDirection:'row',
+
+    
 },
 popularTitlesWrapper  :{
     marginTop:20,
@@ -140,6 +156,42 @@ popularWeight :{
     color:colors.gray,
     marginTop:5
 
+},
+popularCardBottom  :{
+    flexDirection:'row',
+    alignItems:'center',
+    marginTop:10,
+    marginLeft:-20
+
+},
+addPizzaButton :{
+    backgroundColor:colors.red,
+    paddingVertical:17,
+    paddingHorizontal:40,
+    borderTopRightRadius:25,
+    borderBottomLeftRadius:25,
+    
+
+},
+ratingWrapper :{
+    flexDirection:'row',
+    marginLeft:20,
+    alignItems:'center'
+
+},
+ratingText :{
+    fontFamily:'Montserrat-SemiBold',
+    fontSize:12,
+    color:colors.black,
+    marginLeft:5
+},
+imageWrapper :{
+
+},
+popularCardImage :{
+    width:180,
+    height:90,
+  
 },
 
 })
