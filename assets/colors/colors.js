@@ -6,6 +6,10 @@ const colors ={
     gray:'#CDCDCD',
     orange:'#E4723C',
     red:'#C21010',
-    lightred:'#F5EFEF'
+    lightred:'#F5EFEF',
+    darkGray:'#C4C4C4',
+    anotherWhite:'#FBFCFE',
+    onboardingRed:'#F24444'
+
 }
 export default colors;

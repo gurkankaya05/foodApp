@@ -4,12 +4,12 @@
     "slug": "foodApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/white-app.png",
+    "icon": "./assets/icoo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/app.png",
+      "image": "./assets/icoo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#F7F7F7"
+      "backgroundColor": "#C21010"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -28,6 +28,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins":[
+      [
+        "expo-notifications",
+        {
+          "icon":"./assets/notification-icon.png",
+          "color": "#C21010"
+        }
+      ]
+    ]
   }
 }

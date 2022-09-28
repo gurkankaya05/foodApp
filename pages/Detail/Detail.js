@@ -71,7 +71,7 @@ const Detail = ({route,navigation}) =>{
             </View> 
 
       </View>
-      <TouchableOpacity style={styles.buttonWrapper}> 
+      <TouchableOpacity onPress={() => navigation.navigate("Map")} style={styles.buttonWrapper}> 
         <Text style={styles.buttonText}>Place an order</Text>
         <View style={styles.buttonIcon}>    
         <Feather name='chevron-right' size={18} color={colors.white}/>

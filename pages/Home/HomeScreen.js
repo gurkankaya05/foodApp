@@ -52,8 +52,12 @@ return(
  
     <ScrollView showsVerticalScrollIndicator={false}>
     <View style={styles.headerWrapper}>
+      <TouchableOpacity onPress={() => navigation.navigate("Onboarding")} >
       <Image source={vesikalık} style={styles.profileImage}/>
-      <Ionicons name="menu-outline" size={32} color={colors.black} />
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Notifications")}>
+      <Ionicons name="notifications-outline" size={30} color={colors.black} />
+      </TouchableOpacity>
     </View>
   {/* Title */}
     <View style={styles.titleWrapper}>
